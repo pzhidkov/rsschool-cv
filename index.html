@@ -46,6 +46,28 @@
             </div>
         </section>
         <section>
+            <h2>Code examples (python)</h2>
+            <pre>
+    def  count_letters(sentence, average='False'):
+    letter = 0
+    space = 0
+    for world in sentence:
+        if average == False:
+            if world != ' ':
+                letter += 1
+            summ = letter
+            
+        if average == True:
+            if world == ' ':
+                space += 1
+            if world != ' ':
+                letter += 1
+            summ = letter / (space + 1)
+    return summ
+    count_letters("I will build my own theme park", average=True)
+            </pre>
+        </section>
+        <section>
             <h2>Work experience:</h2>
             <div>
                 <ul>
